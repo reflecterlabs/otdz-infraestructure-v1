@@ -1,0 +1,15 @@
+{
+    "name": "infraestructure-optz",
+    "version": "1.0.0",
+    "packageManager": "pnpm@10.25.0",
+    "private": true,
+    "scripts": {
+        "dev": "turbo dev",
+        "build": "turbo build",
+        "test": "turbo test",
+        "lint": "turbo lint"
+    },
+    "devDependencies": {
+        "turbo": "latest"
+    }
+}
