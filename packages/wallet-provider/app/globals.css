@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Clerk Overrides - High Contrast & No Footer */
+.cl-card {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Center Clerk card and inner container */
+.cl-rootBox,
+.cl-card,
+.cl-cardBox,
+.cl-cardBoxInner,
+.cl-main,
+.cl-form {
+  width: 100% !important;
+}
+
+.cl-card,
+.cl-cardBox,
+.cl-cardBoxInner {
+  max-width: 440px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.cl-cardBox,
+.cl-cardBoxInner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide Clerk Footer and Development Badge effectively */
+.cl-footer,
+.cl-card__footer,
+[data-clerk-theme="dark"] .cl-footer,
+.cl-internal-15yfshp,
+.cl-internal-ph6784,
+.cl-internal-1dauv69,
+.cl-internal-66p89c,
+.cl-internal-1pw6u0o,
+.cl-internal-1ggnup0 {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Force pure white for titles and labels as requested */
+/* Force pure white for titles and labels with default alignment */
+.cl-headerTitle {
+  color: #ffffff !important;
+  font-size: 1.75rem !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.cl-headerSubtitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.95rem !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.cl-formFieldLabel {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.cl-formFieldInput,
+.cl-input,
+.cl-inputField,
+.cl-formFieldInput__input,
+.cl-rootBox input,
+.cl-rootBox textarea,
+.cl-rootBox select {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #f8fafc !important;
+  text-align: left !important;
+}
+
+.cl-formFieldInput::placeholder,
+.cl-input::placeholder,
+.cl-inputField::placeholder,
+.cl-formFieldInput__input::placeholder,
+.cl-rootBox input::placeholder,
+.cl-rootBox textarea::placeholder {
+  color: rgba(248, 250, 252, 0.65) !important;
+}
+
+/* Reset Alignment */
+.cl-main,
+.cl-form,
+.cl-formField,
+.cl-formFieldRow,
+.cl-formFieldInput {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.cl-formFieldRow,
+.cl-formField,
+.cl-formFieldInput {
+  width: 100% !important;
+}
+
+.cl-formField > div,
+.cl-formFieldRow > div,
+.cl-formFieldInput > div,
+.cl-formFieldRow > .cl-formFieldInput {
+  width: 100% !important;
+  max-width: 360px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.cl-formFieldInput .cl-input,
+.cl-formFieldInput input,
+.cl-formFieldRow input {
+  width: 100% !important;
+  max-width: 360px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

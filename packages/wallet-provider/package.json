@@ -1,0 +1,73 @@
+{
+  "name": "@optref/social-login-smart-wallet",
+  "version": "1.0.7",
+  "description": "Premium Social Login & Smart Wallet SDK for Starknet",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "app",
+    "components",
+    "hooks",
+    "infrastructure",
+    "public",
+    "src",
+    "middleware.ts",
+    "next.config.ts",
+    "tsconfig.json",
+    "postcss.config.mjs",
+    "eslint.config.mjs",
+    "bin"
+  ],
+  "bin": {
+    "optz-init": "./bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev:app": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "package": "tsup src/index.ts --format cjs,esm --dts --minify --clean --external react,react-dom,next,@clerk/nextjs,@chipi-stack/nextjs,framer-motion,lucide-react --tsconfig tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@optz/shared-configs": "workspace:*",
+    "clsx": "^2.1.1",
+    "starknet": "^6.11.0",
+    "tailwind-merge": "^3.4.0"
+  },
+  "peerDependencies": {
+    "@chipi-stack/nextjs": "^12.7.0",
+    "@clerk/nextjs": "^6.36.10",
+    "framer-motion": "^12.29.2",
+    "lucide-react": "^0.563.0",
+    "next": ">=14",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@chipi-stack/nextjs": "^12.7.0",
+    "@clerk/nextjs": "^6.36.10",
+    "framer-motion": "^12.29.2",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "tsup": "^8.5.1",
+    "typescript": "^5"
+  }
+}
