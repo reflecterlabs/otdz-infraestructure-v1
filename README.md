@@ -78,8 +78,8 @@ El protocolo **ERC-8004** integrado permite que cada interacción de un agente s
 
 ## 📄 Licencia
 
-Este proyecto es propiedad privada de **OPTZ Infrastructure**. Todos los derechos reservados.
+Este proyecto es propiedad privada de **OTDZ Infrastructure**. Todos los derechos reservados.
 
 ---
 
-Desarrollado con precisión para el futuro de la Web3 por el equipo de **OPTZ**. 🌐
+Desarrollado con precisión para el futuro de la Web3 por el equipo de **Reflecterlabs**. 🌐
