@@ -1,4 +1,4 @@
-# OPTZ Infrastructure - Unified Agentic Framework 🚀
+# OTDZ Infrastructure - Unified Agentic Framework 🚀
 
 Bienvenido a la infraestructura central de **OPTZ**, un ecosistema diseñado para potenciar la adopción de Starknet mediante la integración de Social Login, Smart Wallets y el protocolo de identidad de agentes **ERC-8004**.
 
